@@ -338,11 +338,11 @@ template {
   display: none;
 }
 
-body {
+body, li {
   box-sizing: border-box;
 }
 
-h2, p {
+h2, h3, p {
   margin: 0;
 }
 
@@ -397,6 +397,7 @@ header h1 {
   align-items: center;
   background-color: whitesmoke;
   padding: 40px 0 55px 0;
+  margin-bottom: 47px;
 }
 .description p {
   font-size: 18px;
@@ -408,6 +409,63 @@ header h1 {
   text-align: center;
   padding: 0 43px;
   margin-bottom: 13px;
+}
+
+.functioning__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
+  padding-left: 20px;
+}
+.functioning h3 {
+  font-size: 16px;
+}
+.functioning__list {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  counter-reset: numero;
+  padding-left: 12px;
+  padding-right: 24px;
+  margin: 25px 0;
+}
+@media screen and (min-width: 930px) {
+  .functioning__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+.functioning__btn {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-width: 265px;
+  background-color: whitesmoke;
+  box-shadow: 0px 4px 8px #cccccc;
+  padding: 27px 0 27px 35px;
+  border-radius: 25px;
+}
+.functioning .fas {
+  padding: 0 25px 0 0;
+  font-size: 20px;
+  color: gray;
+}
+
+li::before {
+  position: absolute;
+  left: -12px;
+  counter-increment: numero;
+  content: counter(numero);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  color: #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
