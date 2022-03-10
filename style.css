@@ -396,6 +396,10 @@ h4 {
   padding-right: 6px;
 }
 
+.fa-arrow-left {
+  font-size: 20px;
+}
+
 .restaurants__card {
   display: flex;
   flex: 1;
@@ -459,9 +463,22 @@ h4 {
 header {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 header h1 {
   margin: 13px 0;
+}
+
+.header__back {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 992px) {
+  .header__back {
+    left: 40px;
+  }
 }
 
 .location {
@@ -597,6 +614,17 @@ header h1 {
 }
 .footer__nav__link {
   margin-bottom: 10px;
+}
+
+.picture {
+  display: flex;
+  min-height: 260px;
+  max-height: 500px;
+}
+.picture__img {
+  flex: 1;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
