@@ -1,0 +1,24 @@
+.restaurants{
+    background-color: lighten($color: $black-color, $amount: 96%);
+    padding: 55px 20px;
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    &__container{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    &__articles{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+}
