@@ -8,5 +8,9 @@ h2, h3,h4, p{
 
 a{
     text-decoration: none;
-    color: #000000;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
 }

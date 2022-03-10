@@ -348,7 +348,11 @@ h2, h3, h4, p {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
@@ -379,6 +383,16 @@ h4 {
 .fa-heart {
   font-size: 25px;
   padding: 5px 12px 0 0;
+}
+
+.fa-utensils {
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.fa-hands-helping {
+  font-size: 12px;
+  padding-right: 6px;
 }
 
 .restaurants__card {
@@ -524,7 +538,7 @@ header h1 {
   color: gray;
 }
 
-li::before {
+.functioning__btn::before {
   position: absolute;
   left: -12px;
   counter-increment: numero;
@@ -561,6 +575,27 @@ li::before {
     flex-wrap: wrap;
     gap: 40px;
   }
+}
+
+.footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 25px 20px;
+}
+.footer__logo {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+.footer__container {
+  max-width: 1400px;
+  margin: auto;
+}
+.footer__nav {
+  padding: 0;
+}
+.footer__nav__link {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

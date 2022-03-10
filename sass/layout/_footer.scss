@@ -1,0 +1,20 @@
+.footer{
+    background-color: lighten($color: $black-color, $amount: 20.7%);
+    color: #ffffff;
+    padding: 25px 20px;
+    &__logo{
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+    }
+    &__container{
+        max-width: 1400px;
+        margin: auto;
+    }
+    &__nav{
+        padding: 0;
+        &__link{
+            margin-bottom: 10px;
+        }
+    }
+}
