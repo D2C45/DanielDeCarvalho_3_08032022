@@ -1,7 +1,18 @@
 header{
     display: flex;
     justify-content: center;
+    position: relative;
     h1{
         margin: 13px 0;
+    }
+}
+
+.header__back{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (min-width: 992px){
+        left: 40px;
     }
 }
