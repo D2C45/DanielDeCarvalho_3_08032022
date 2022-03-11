@@ -454,7 +454,7 @@ h4 {
 .card__body {
   display: flex;
   justify-content: space-between;
-  height: 100%;
+  flex: 1;
   padding: 15px 10px;
 }
 .card__body__description {

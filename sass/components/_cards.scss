@@ -49,7 +49,7 @@
     &__body{
         display: flex;
         justify-content: space-between;
-        height: 100%;
+        flex: 1;
         padding: 15px 10px;
         &__description{
             display: flex;
