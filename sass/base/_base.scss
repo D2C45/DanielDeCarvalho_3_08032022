@@ -1,16 +1,31 @@
-body, li{
+*{
     box-sizing: border-box;    
 }
-
-h2, h3,h4, p{
+h1, h2, h3, h4, p{
     margin: 0;
 }
-
 a{
     text-decoration: none;
     color: inherit;
 }
-
 ul{
     list-style: none;
+    padding: 0;
+}
+input{
+    border: none;
+    background-color: lightness-shift($main-color, map-get($darkness-amount,background2));
+    font-size: 16px;
+    font-weight: 600;
+    color: $font-color;
+    cursor: pointer;
+    padding: 5px;
+    &::placeholder{
+        color: $font-color;
+        opacity: 1; // Firefox
+    }
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
 }

@@ -1,18 +1,16 @@
-header{
+.header{
     display: flex;
     justify-content: center;
     position: relative;
-    h1{
-        margin: 13px 0;
-    }
-}
-
-.header__back{
+    padding: 13px 0;
+    background-color: $main-color;
+    &__back{
     position: absolute;
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    @media screen and (min-width: 992px){
+    @include media (desktop){
         left: 40px;
+    }
     }
 }

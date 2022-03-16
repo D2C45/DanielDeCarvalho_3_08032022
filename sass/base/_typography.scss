@@ -2,16 +2,52 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: $font-color;
 }
-
 h1{
     font-family: 'Shrikhand', cursive;
+    font-size: 32px;
+    font-weight: 700;
 }
-
 h2{
+    font-size: 24px;
     font-weight: 900;
 }
-
-h4{
-    font-weight: 300;
+.restaurants__articles{
+    h2{                                                 // Name of the restaurant in the main page
+        font-size: 19px;
+        font-weight: 700;
+    }
+    h3{                                                 // Location of the restaurant
+        font-weight: 300;
+    }
+}
+.menu{
+    &__header h2{                                         // Name of the restaurant in the restaurant page
+        font-family: 'shrikhand', cursive;
+        font-size: 28px;
+        font-weight: 500;
+    }
+    &__title{                                              // Entrées, Plats, Desserts
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        padding-left: 8px;
+    }
+    &__item{
+        font-size: 15px;                                    // Description of the dish
+        h2{                                                 // Name of a dish
+        font-size: 18px;
+        font-weight: 600;
+        }
+    }
+}
+.footer h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+    font-weight: 500;
+}
+h3{
+    font-size: 16px;
+    font-weight: 700;
 }

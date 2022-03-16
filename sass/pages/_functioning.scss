@@ -1,0 +1,40 @@
+.functioning{
+    padding: 55px 20px;
+    background-color: $main-color;
+    &__list{                            // Ordered list
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        counter-reset: numero;
+        padding-left: 12px;
+        margin: 20px 0;
+        @include media (desktop){
+            flex-direction: row;
+            gap: 40px;
+        }
+    }
+    &__btn{                             // Item list buttons
+        position: relative;
+        display: flex;
+        flex: 1;
+        min-width: 265px;
+        @include background-color;
+        @include cards-shadow;
+        padding: 27px 0 27px 35px;
+        border-radius: 25px;
+        &::before{                      // Numbers before item list buttons
+            counter-increment: numero;
+            content: counter(numero);
+            position: absolute;
+            left: -12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-color;
+            color: #ffffff;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+        }
+    }
+}

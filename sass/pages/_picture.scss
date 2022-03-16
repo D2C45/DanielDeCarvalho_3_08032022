@@ -1,8 +1,8 @@
-.picture{
+picture{
     display: flex;
     min-height: 260px;
     max-height: 400px;
-    &__img{
+    img{
         flex: 1;
         width: 100%;
         object-fit: cover;

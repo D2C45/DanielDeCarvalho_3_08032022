@@ -1,0 +1,15 @@
+.restaurants{
+    @include background-color;
+    padding: 55px 20px;
+    &__articles{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0 0;
+        gap: 20px;
+        @include media (tablet){
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+}

@@ -1,4 +1,6 @@
 @import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
 
 @import "./base/normalize";
 @import "./base/base";
@@ -9,10 +11,9 @@
 @import "./components/cards";
 
 @import "./layout/header";
-@import "./layout/location";
-@import "./layout/description";
-@import "./layout/functioning";
-@import "./layout/restaurants";
 @import "./layout/footer";
-@import "./layout/picture";
-@import "./layout/menu";
+@import "./pages/location";
+@import "./pages/functioning";
+@import "./pages/restaurants";
+@import "./pages/picture";
+@import "./pages/menu";

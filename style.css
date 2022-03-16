@@ -338,11 +338,11 @@ template {
   display: none;
 }
 
-body, li {
+* {
   box-sizing: border-box;
 }
 
-h2, h3, h4, p {
+h1, h2, h3, h4, p {
   margin: 0;
 }
 
@@ -353,22 +353,80 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+}
+
+input {
+  border: none;
+  background-color: #ebebeb;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  padding: 5px;
+}
+input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  color: #000000;
 }
 
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 h2 {
+  font-size: 24px;
   font-weight: 900;
 }
 
-h4 {
+.restaurants__articles h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.restaurants__articles h3 {
   font-weight: 300;
+}
+
+.menu__header h2 {
+  font-family: "shrikhand", cursive;
+  font-size: 28px;
+  font-weight: 500;
+}
+.menu__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 8px;
+}
+.menu__item {
+  font-size: 15px;
+}
+.menu__item h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .btn {
@@ -384,9 +442,21 @@ h4 {
   padding: 15px 50px;
 }
 
+.fa-map-marker-alt {
+  padding-right: 17px;
+  padding-top: 5px;
+}
+
+.functioning .fas {
+  font-size: 20px;
+  padding-right: 25px;
+  color: gray;
+}
+
 .fa-heart {
   font-size: 25px;
-  padding: 5px 12px 0 0;
+  padding-top: 5px;
+  padding-right: 12px;
 }
 
 .fa-utensils {
@@ -445,7 +515,6 @@ h4 {
   right: 13px;
   font-size: 14px;
   font-weight: 600;
-  width: 60px;
   padding: 6px 10px;
   border-radius: 2px;
   color: #2c9c81;
@@ -463,15 +532,13 @@ h4 {
   justify-content: space-between;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
   position: relative;
+  padding: 13px 0;
+  background-color: #ffffff;
 }
-header h1 {
-  margin: 13px 0;
-}
-
 .header__back {
   position: absolute;
   left: 20px;
@@ -484,20 +551,24 @@ header h1 {
   }
 }
 
+.footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 25px 20px;
+}
+.footer__nav {
+  padding: 0;
+}
+.footer__nav__link {
+  margin-bottom: 10px;
+}
+
 .location {
   display: flex;
   justify-content: center;
   background-color: #ebebeb;
   box-shadow: inset 0 5px 15px -5px #b3b3b3;
-  padding: 15px 0;
-  font-weight: 500;
-}
-.location__city {
-  display: flex;
-  margin-left: -30px;
-}
-.location .fas {
-  padding: 0 17px 5px 0;
+  padding: 10px 0 10px 55px;
 }
 
 .description {
@@ -507,27 +578,21 @@ header h1 {
   background-color: whitesmoke;
   padding: 40px 0 55px 0;
 }
+.description h2 {
+  text-align: center;
+  padding: 0 43px;
+  margin-bottom: 13px;
+}
 .description p {
   font-size: 18px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 33px;
 }
-.description h2 {
-  text-align: center;
-  padding: 0 43px;
-  margin-bottom: 13px;
-}
 
 .functioning {
   padding: 55px 20px;
-}
-.functioning__container {
-  max-width: 1400px;
-  margin: auto;
-}
-.functioning h3 {
-  font-size: 16px;
+  background-color: #ffffff;
 }
 .functioning__list {
   display: flex;
@@ -553,17 +618,11 @@ header h1 {
   padding: 27px 0 27px 35px;
   border-radius: 25px;
 }
-.functioning .fas {
-  padding: 0 25px 0 0;
-  font-size: 20px;
-  color: gray;
-}
-
 .functioning__btn::before {
-  position: absolute;
-  left: -12px;
   counter-increment: numero;
   content: counter(numero);
+  position: absolute;
+  left: -12px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -578,16 +637,10 @@ header h1 {
   background-color: whitesmoke;
   padding: 55px 20px;
 }
-.restaurants h2 {
-  margin-bottom: 20px;
-}
-.restaurants__container {
-  max-width: 1400px;
-  margin: auto;
-}
 .restaurants__articles {
   display: flex;
   flex-direction: column;
+  margin: 20px 0 0 0;
   gap: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -598,48 +651,15 @@ header h1 {
   }
 }
 
-.footer {
-  background-color: #353535;
-  color: #ffffff;
-  padding: 25px 20px;
-}
-.footer__logo {
-  font-size: 18px;
-  font-weight: 500;
-  margin: 0;
-}
-.footer__container {
-  max-width: 1400px;
-  margin: auto;
-}
-.footer__nav {
-  padding: 0;
-}
-.footer__nav__link {
-  margin-bottom: 10px;
-}
-
-.picture {
+picture {
   display: flex;
   min-height: 260px;
   max-height: 400px;
 }
-.picture__img {
+picture img {
   flex: 1;
   width: 100%;
   object-fit: cover;
-}
-
-.header--menu {
-  font-family: "shrikhand", cursive;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 30px 20px;
-}
-.header--menu h2 {
-  font-size: 28px;
-  font-weight: 500;
 }
 
 .menu {
@@ -647,11 +667,15 @@ header h1 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1400px;
-  margin: auto;
   margin-top: -50px;
   border-radius: 50px 50px 0 0;
   background-color: whitesmoke;
+}
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 30px 20px;
 }
 .menu__container {
   display: flex;
@@ -665,13 +689,13 @@ header h1 {
     gap: 40px;
   }
 }
+.menu__category {
+  flex: 1;
+  min-width: 296px;
+}
 .menu__title {
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 8px;
 }
 .menu__title::after {
   content: "";
@@ -683,23 +707,17 @@ header h1 {
 .menu__list {
   display: flex;
   flex-direction: column;
-  padding: 0;
   gap: 13px;
 }
 .menu__item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0px 4px 8px #cccccc;
   height: 65px;
   border-radius: 15px;
   padding: 10px 20px 10px 10px;
-  font-size: 15px;
-}
-.menu__item h4 {
-  font-size: 18px;
-  font-weight: 600;
 }
 .menu__info {
   display: flex;
@@ -715,10 +733,6 @@ header h1 {
   display: flex;
   justify-content: center;
   padding: 40px 0 80px 0;
-}
-.menu__category {
-  flex: 1;
-  min-width: 296px;
 }
 
 /*# sourceMappingURL=style.css.map */

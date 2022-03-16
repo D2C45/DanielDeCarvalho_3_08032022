@@ -1,7 +1,7 @@
 .btn{
     color: #ffffff;
-    background: linear-gradient($secondary-color, $primary-color);    
-    box-shadow: 0px 4px 8px lighten($color: $black-color, $amount: 80%);
+    background: linear-gradient($secondary-color, $primary-color);
+    @include cards-shadow;
     border: none;
     border-radius: 24px;
     padding: 15px 20px;

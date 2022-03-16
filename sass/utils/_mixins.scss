@@ -1,0 +1,20 @@
+@mixin cards-shadow {
+    box-shadow: 0px 4px 8px lightness-shift($main-color, map-get($darkness-amount,boxshadow1));
+}
+
+@mixin background-color {
+    background-color: lightness-shift($main-color, map-get($darkness-amount,background1));
+}
+
+@mixin media ($screen) {
+    @if $screen==tablet {
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+            @content;
+        }
+    }
+    @if $screen==desktop {
+        @media screen and (min-width: map-get($breakpoints, desktop)) {
+            @content;
+        }
+    }    
+}
