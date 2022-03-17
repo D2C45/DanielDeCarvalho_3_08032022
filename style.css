@@ -359,15 +359,20 @@ ul {
 input {
   border: none;
   background-color: #ebebeb;
+  width: 196px;
   font-size: 16px;
   font-weight: 600;
   color: #000000;
+  outline: none;
   cursor: pointer;
   padding: 5px;
 }
 input::placeholder {
   color: #000000;
   opacity: 1;
+}
+input:focus {
+  outline: 2px solid #000000;
 }
 
 .container {

@@ -15,14 +15,19 @@ ul{
 input{
     border: none;
     background-color: lightness-shift($main-color, map-get($darkness-amount,background2));
+    width: 196px;  //harmonize width on all devices
     font-size: 16px;
     font-weight: 600;
     color: $font-color;
+    outline: none;    //suppress outline to have the same color outline in all browsers
     cursor: pointer;
     padding: 5px;
     &::placeholder{
         color: $font-color;
         opacity: 1; // Firefox
+    }
+    &:focus{
+        outline: 2px solid $font-color; //define outline for all browsers
     }
 }
 .container{
