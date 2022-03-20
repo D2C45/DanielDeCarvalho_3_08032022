@@ -1,0 +1,31 @@
+.favorite__check{
+    position: relative;
+    display: flex;
+    label{
+        position: relative;
+        width: 100%;
+        height: $like-size;
+        .far{
+            position: absolute;
+        }
+        .fas{
+            opacity: 0;
+            @include gradient-color;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: opacity 1s;
+        }
+    }
+    input{
+        position: absolute;
+        width: $like-size;
+        opacity: 0;
+    }
+    input:checked + label>.fas{
+        opacity: 1;
+    }
+    input:checked + label>.far{
+        opacity: 0;
+    }
+}

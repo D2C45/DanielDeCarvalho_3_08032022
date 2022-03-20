@@ -1,6 +1,12 @@
 .restaurants__card{
     display: flex;
     flex: 1;
+    position: relative;  //for the postion of the like
+    .favorite__check{
+        position: absolute;
+        right: 22px;
+        bottom: 35px;
+    }
 }
 .card{
     position: relative;
@@ -41,13 +47,8 @@
     }
     &__body{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        flex: 1;
         padding: 15px 10px;
-        &__description{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
     }
 }

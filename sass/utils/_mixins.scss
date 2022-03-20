@@ -18,3 +18,7 @@
         }
     }    
 }
+
+@mixin gradient-color ($direction:0deg) {
+    background: linear-gradient($direction, $secondary-color, $primary-color);
+}

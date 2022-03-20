@@ -11,6 +11,9 @@
         justify-content: space-between;
         align-items: baseline;
         padding: 30px 20px;
+        .favorite__check{
+            margin-right: 20px;
+        }
     }
     &__container{
         display: flex;
@@ -50,7 +53,7 @@
         @include cards-shadow;
         height: 65px;
         border-radius: 15px;
-        padding: 10px 20px 10px 10px;
+        padding: 10px 26px 10px 10px;
     }
     &__info{                                // description and price of the dish
         display: flex;
