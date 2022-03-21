@@ -9,4 +9,8 @@
     &--order{
         padding: 15px 50px;
     }
+    &:hover{
+        @include gradient-color(180deg, lighten($secondary-color, 3%), lighten($primary-color, 3%));
+        @include cards-shadow(boxshadow3);
+    }
 }

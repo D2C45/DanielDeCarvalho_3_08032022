@@ -356,25 +356,6 @@ ul {
   padding: 0;
 }
 
-input {
-  border: none;
-  background-color: #ebebeb;
-  width: 196px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #000000;
-  outline: none;
-  cursor: pointer;
-  padding: 5px;
-}
-input::placeholder {
-  color: #000000;
-  opacity: 1;
-}
-input:focus {
-  outline: 2px solid #000000;
-}
-
 .container {
   max-width: 1400px;
   margin: auto;
@@ -445,6 +426,10 @@ h3 {
 }
 .btn--order {
   padding: 15px 50px;
+}
+.btn:hover {
+  background: linear-gradient(180deg, #ff88de, #9b63df);
+  box-shadow: 0px 4px 8px #999999;
 }
 
 .fa-map-marker-alt {
@@ -624,6 +609,25 @@ h3 {
   font-weight: 300;
   text-align: center;
   margin-bottom: 33px;
+}
+
+#city {
+  border: none;
+  background-color: #ebebeb;
+  width: 196px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
+#city::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+#city:focus {
+  outline: 2px solid #000000;
 }
 
 .functioning {

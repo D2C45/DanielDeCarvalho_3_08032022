@@ -1,5 +1,5 @@
-@mixin cards-shadow {
-    box-shadow: 0px 4px 8px lightness-shift($main-color, map-get($darkness-amount,boxshadow1));
+@mixin cards-shadow ($amount:boxshadow1) {
+    box-shadow: 0px 4px 8px lightness-shift($main-color, map-get($darkness-amount,$amount));
 }
 
 @mixin background-color {
@@ -19,6 +19,6 @@
     }    
 }
 
-@mixin gradient-color ($direction:0deg) {
-    background: linear-gradient($direction, $secondary-color, $primary-color);
+@mixin gradient-color ($direction:0deg, $color1:$secondary-color, $color2:$primary-color) {
+    background: linear-gradient($direction, $color1, $color2);
 }
