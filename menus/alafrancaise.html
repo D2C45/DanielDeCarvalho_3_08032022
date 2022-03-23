@@ -29,106 +29,169 @@
                 </label>
             </div>
         </header>
-        <section class="menu__container">
-            <div class="menu__category">
-                <h2 class="menu__title">entrées</h2>
+        <form method="post" action="commande.php" class="menu__container">
+            <fieldset class="menu__category">
+                <legend class="menu__title">entrées</legend>
                 <ul class="menu__list">
-                    <li>
-                        <article class="menu__item">
-                            <h2>Tartare de poulpe acidulé</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="tartaredepoulpeacidule" name="favorite">
+                        <label for="tartaredepoulpeacidule"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Tartare de poulpe acidulé</h2>
                                 <p>Aux zestes d'orange</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>25€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
-                    <li>
-                        <article class="menu__item">
-                            <h2>Velouté de légumes d'antan</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="veloutelegumesantan" name="favorite">
+                        <label for="veloutelegumesantan"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Velouté de légumes d'antan</h2>
                                 <p>Carotte, panais, topinambour</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>35€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
-                    <li>
-                        <article class="menu__item">
-                            <h2>Soupe à l'oignon</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="soupeoignon" name="favorite">
+                        <label for="soupeoignon"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Soupe à l'oignon</h2>
                                 <p>Revisitée</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>20€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
                 </ul>
-            </div>
-            <div class="menu__category">
-                <h2 class="menu__title">plats</h2>
+            </fieldset>
+            <fieldset class="menu__category">
+                <legend class="menu__title">plats</legend>
                 <ul class="menu__list">
-                    <li>
-                        <article class="menu__item">
-                            <h2>Coquilles Saint-Jacques</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="Coquilles-Saint-Jacques" name="favorite">
+                        <label for="Coquilles-Saint-Jacques"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Coquilles Saint-Jacques</h2>
                                 <p>Accompagnées d'une purée de panais</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>40€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
-                    <li>
-                        <article class="menu__item">
-                            <h2>Magret de canard</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="Magret-de-canard" name="favorite">
+                        <label for="Magret-de-canard"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Magret de canard</h2>
                                 <p>Et parmentier de pommes de terre</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>35€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
-                    <li>
-                        <article class="menu__item">
-                            <h2>Pigeonneau d’Ille-et-Vilaine</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="Pigeonneau-d-Ille-et-Vilaine" name="favorite">
+                        <label for="Pigeonneau-d-Ille-et-Vilaine"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Pigeonneau d’Ille-et-Vilaine</h2>
                                 <p>Sur son lit de gnocchis aux légumes</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>44€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
                 </ul>
-            </div>
-            <div class="menu__category">
-                <h2 class="menu__title">desserts</h2>
+            </fieldset>
+            <fieldset class="menu__category">
+                <legend class="menu__title">desserts</legend>
                 <ul class="menu__list">
-                    <li>
-                        <article class="menu__item">
-                            <h2>Pétales de violettes glacés</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="Pétales-de-violettes-glacés" name="favorite">
+                        <label for="Pétales-de-violettes-glacés"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Pétales de violettes glacés</h2>
                                 <p>Et purée de noisettes</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>18€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
-                    <li>
-                        <article class="menu__item">
-                            <h2>Fondant au chocolat</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="Fondant-au-chocolat" name="favorite">
+                        <label for="Fondant-au-chocolat"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Fondant au chocolat</h2>
                                 <p>Revisité</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>22€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
-                    <li>
-                        <article class="menu__item">
-                            <h2>Millefeuille croustillant</h2>
+                    <li class="menu__item">
+                        <input type="checkbox" id="Millefeuille-croustillant" name="favorite">
+                        <label for="Millefeuille-croustillant"></label>
+                        <article class="menu__description">
                             <div class="menu__info">
+                                <h2>Millefeuille croustillant</h2>
                                 <p>Myrtilles et pâte d’amande</p>
+                            </div>
+                            <div class="menu__price">
                                 <strong>23€</strong>
                             </div>
                         </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </fieldset>
+        </form>
         <div class="menu__order">
-            <button class="btn btn--order">Commander</button>
+            <button type="submit" class="btn btn--order">Commander</button>
         </div>
     </main>
     <footer class="footer">

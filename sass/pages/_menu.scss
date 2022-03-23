@@ -28,6 +28,9 @@
     &__category{                            // 3 columns (Entrées, Plats, Desserts)
         flex: 1;
         min-width: 296px;
+        padding: 0;                         // remove user agent style for fieldset
+        margin: 0;
+        border: none;
     }
     &__title{                               // Entrées, Plats, Desserts
             display: flex;
@@ -45,25 +48,51 @@
         flex-direction: column;
         gap: 13px;
     }
-    &__item{                                // a dish
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    &__item{     
+        display: flex;                           // a dish
+        position: relative;
         background-color: $main-color;
         @include cards-shadow;
         height: 65px;
         border-radius: 15px;
-        padding: 10px 26px 10px 10px;
+        overflow: hidden;
+        input{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        label{
+            position: absolute;
+            width: 100%;
+            height: 100%;            
+            border-radius: 15px;
+            cursor: pointer;
+        }
     }
-    &__info{                                // description and price of the dish
+    &__description{
         display: flex;
+        flex: 1;
         justify-content: space-between;
+        padding: 10px 26px 10px 10px;
+        overflow: hidden;
+    }
+    &__info{                                // description of the dish
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-right: 10px;
+        @include text-ellipsis;
+        h2{
+            @include text-ellipsis;
+        }
         p{
-            overflow: hidden;               // overflow hidden with ...
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            padding-right: 10px;
-        }        
+            @include text-ellipsis;
+        }
+    }
+    &__price{                               // price of the dish
+        display: flex;
+        align-items: flex-end;
     }
     &__order{                               // button commander position
         display: flex;

@@ -1,0 +1,24 @@
+.greencheckbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    background-color: $tertiary-color;
+    margin-right: -60px;
+    transition: margin-right 500ms;
+}
+.fa-check-circle{
+    color: $main-color;
+    font-size: 20px;
+    transform: rotate(-270deg);
+    transition: transform 350ms 150ms;
+}
+.menu__item{
+    input:checked~.greencheckbox{
+        margin-right: 0;
+        .fa-check-circle{
+            transform: rotate(0deg);
+        }
+    }
+}
