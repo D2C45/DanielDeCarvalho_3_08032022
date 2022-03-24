@@ -1,0 +1,55 @@
+$loader-size: 10vmin;
+$loader-border: 1vmin;
+$loader-space: 1px;
+
+@mixin border ($color: $primary-color) {
+    border: $loader-border solid;
+    border-color: $color $color transparent transparent;
+    border-radius: 50%;
+}
+
+.loader{
+    animation:spin 1s 3 linear;
+    position: fixed;
+    left: calc(50% - $loader-size/2);
+    top: calc(50% - $loader-size/2);
+    width: $loader-size;
+    height: $loader-size;
+    @include border;
+    &::before, &::after{
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+    }
+    &::before{
+        animation:spin 2s 1.5 linear;
+        left: $loader-space;
+        top: $loader-space;
+        width: calc($loader-size - 2*($loader-border + $loader-space));
+        height: calc($loader-size - 2*($loader-border + $loader-space));
+        @include border($secondary-color);
+    }
+    &::after{
+        animation:spin 3s 1 linear;
+        left: calc($loader-border + 2*$loader-space);
+        top: calc($loader-border + 2*$loader-space);
+        width: calc($loader-size - 4*($loader-border + $loader-space));
+        height: calc($loader-size - 4*($loader-border + $loader-space));
+        @include border($tertiary-color);
+    }
+}
+.main-wrapper{
+    opacity: 0.2;
+    animation: opacity 0.01s 3s both;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes spin-reverse {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+@keyframes opacity {
+    100% {opacity: 1;}
+}

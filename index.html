@@ -9,142 +9,145 @@
     <title>ohmyfood</title>
 </head>
 <body>
-    <header class="header">
-        <h1>ohmyfood</h1>
-    </header>
-    <section>
-        <div class="location">
-            <i class="fas fa-map-marker-alt"></i>
-            <input type="search" name="city" id="city" class="search__form" placeholder="Paris, Belleville">
-        </div>
-        <div class="description">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <button type="submit" class="btn">Explorer nos restaurants</button>
-        </div>
-    </section>
-    <section class="functioning">
-        <div class="container">
-            <h2>Fonctionnement</h2>
-            <ol class="functioning__list">
-                <li class="functioning__btn">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Choisissez un restaurant</h3>
-                </li>
-                <li class="functioning__btn">
-                    <i class="fas fa-list"></i>
-                    <h3>Composez votre menu</h3>
-                </li>
-                <li class="functioning__btn">
-                    <i class="fas fa-store"></i>
-                    <h3>Déguster au restaurant</h3>
-                </li>
-            </ol>
-        </div>
-    </section>
-    <main class="restaurants">
-        <div class="container">
-            <h2>Restaurants</h2>
-            <ul class="restaurants__articles">
-                <li class="restaurants__card">
-                    <article class="restaurants__card">
-                        <a href="./menus/lapalettedugout.html" class="card">
-                            <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat du restaurant La palette du goût à Ménilmontant" class="card__img">
-                            <span class="card__badge--new">Nouveau</span>
-                            <div class="card__body">
-                                    <h2>La palette du goût</h2>
-                                    <h3>Ménilmontant</h3>
+    <div class="loader"></div>
+    <div class="main-wrapper">
+        <header class="header">
+            <h1>ohmyfood</h1>
+        </header>
+        <section>
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" name="city" id="city" class="search__form" placeholder="Paris, Belleville">
+            </div>
+            <div class="description">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <button type="submit" class="btn">Explorer nos restaurants</button>
+            </div>
+        </section>
+        <section class="functioning">
+            <div class="container">
+                <h2>Fonctionnement</h2>
+                <ol class="functioning__list">
+                    <li class="functioning__btn">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Choisissez un restaurant</h3>
+                    </li>
+                    <li class="functioning__btn">
+                        <i class="fas fa-list"></i>
+                        <h3>Composez votre menu</h3>
+                    </li>
+                    <li class="functioning__btn">
+                        <i class="fas fa-store"></i>
+                        <h3>Déguster au restaurant</h3>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <main class="restaurants">
+            <div class="container">
+                <h2>Restaurants</h2>
+                <ul class="restaurants__articles">
+                    <li class="restaurants__card">
+                        <article class="restaurants__card">
+                            <a href="./menus/lapalettedugout.html" class="card">
+                                <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Plat du restaurant La palette du goût à Ménilmontant" class="card__img">
+                                <span class="card__badge--new">Nouveau</span>
+                                <div class="card__body">
+                                        <h2>La palette du goût</h2>
+                                        <h3>Ménilmontant</h3>
+                                </div>
+                            </a>
+                            <div class="favorite__check">
+                                <input type="checkbox" id="lapalettedugout" name="favorite">
+                                <label for="lapalettedugout">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                        <div class="favorite__check">
-                            <input type="checkbox" id="lapalettedugout" name="favorite">
-                            <label for="lapalettedugout">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
-                            </label>
-                        </div>
-                    </article>
-                </li>
-                <li class="restaurants__card">
-                    <article class="restaurants__card">
-                        <a href="./menus/lanoteenchantee.html" class="card">
-                            <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat du restaurant La note enchantée à Charonne" class="card__img">
-                            <span class="card__badge--new">Nouveau</span>
-                            <div class="card__body">
-                                    <h2>La note enchantée</h2>
-                                    <h3>Charonne</h3>
+                        </article>
+                    </li>
+                    <li class="restaurants__card">
+                        <article class="restaurants__card">
+                            <a href="./menus/lanoteenchantee.html" class="card">
+                                <img src="./img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Plat du restaurant La note enchantée à Charonne" class="card__img">
+                                <span class="card__badge--new">Nouveau</span>
+                                <div class="card__body">
+                                        <h2>La note enchantée</h2>
+                                        <h3>Charonne</h3>
+                                </div>
+                            </a>
+                            <div class="favorite__check">
+                                <input type="checkbox" id="lanoteenchantee" name="favorite">
+                                <label for="lanoteenchantee">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                        <div class="favorite__check">
-                            <input type="checkbox" id="lanoteenchantee" name="favorite">
-                            <label for="lanoteenchantee">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
-                            </label>
-                        </div>
-                    </article>
-                </li>
-                <li class="restaurants__card">
-                    <article class="restaurants__card">
-                        <a href="./menus/alafrancaise.html" class="card">
-                            <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat du restaurant À la française à Cité Rouge" class="card__img">
-                            <span class="card__badge">Nouveau</span>
-                            <div class="card__body">
-                                    <h2>À la française</h2>
-                                    <h3>Cité Rouge</h3>
+                        </article>
+                    </li>
+                    <li class="restaurants__card">
+                        <article class="restaurants__card">
+                            <a href="./menus/alafrancaise.html" class="card">
+                                <img src="./img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Plat du restaurant À la française à Cité Rouge" class="card__img">
+                                <span class="card__badge">Nouveau</span>
+                                <div class="card__body">
+                                        <h2>À la française</h2>
+                                        <h3>Cité Rouge</h3>
+                                </div>
+                            </a>
+                            <div class="favorite__check">
+                                <input type="checkbox" id="alafrancaise" name="favorite">
+                                <label for="alafrancaise">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                        <div class="favorite__check">
-                            <input type="checkbox" id="alafrancaise" name="favorite">
-                            <label for="alafrancaise">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
-                            </label>
-                        </div>
-                    </article>
-                </li>
-                <li class="restaurants__card">
-                    <article class="restaurants__card">
-                        <a href="./menus/ledelicedessens.html" class="card">
-                            <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat du restaurant Le délice des sens à Folie-Méricourt" class="card__img">
-                            <span class="card__badge">Nouveau</span>
-                            <div class="card__body">
-                                    <h2>Le délice des sens</h2>
-                                    <h3>Folie-Méricourt</h3>
+                        </article>
+                    </li>
+                    <li class="restaurants__card">
+                        <article class="restaurants__card">
+                            <a href="./menus/ledelicedessens.html" class="card">
+                                <img src="./img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat du restaurant Le délice des sens à Folie-Méricourt" class="card__img">
+                                <span class="card__badge">Nouveau</span>
+                                <div class="card__body">
+                                        <h2>Le délice des sens</h2>
+                                        <h3>Folie-Méricourt</h3>
+                                </div>
+                            </a>
+                            <div class="favorite__check">
+                                <input type="checkbox" id="ledelicedessens" name="favorite">
+                                <label for="ledelicedessens">
+                                    <i class="far fa-heart"></i>
+                                    <i class="fas fa-heart"></i>
+                                </label>
                             </div>
-                        </a>
-                        <div class="favorite__check">
-                            <input type="checkbox" id="ledelicedessens" name="favorite">
-                            <label for="ledelicedessens">
-                                <i class="far fa-heart"></i>
-                                <i class="fas fa-heart"></i>
-                            </label>
-                        </div>
-                    </article>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <h2>ohmyfood</h2>
-            <ul class="footer__nav">
-                <li class="footer__nav__link">
-                    <a href="#"><i class="fas fa-utensils"></i>
-                    Proposer un restaurant</a>
-                </li>
-                <li class="footer__nav__link">
-                    <a href="#"><i class="fas fa-hands-helping"></i>
-                    Devenir partenaire</a>
-                </li>
-                <li class="footer__nav__link">
-                    <a href="#">Mentions légales</a>
-                </li>
-                <li class="footer__nav__link">
-                    <a href="mailto:contact@ohmyfood.fr">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <h2>ohmyfood</h2>
+                <ul class="footer__nav">
+                    <li class="footer__nav__link">
+                        <a href="#"><i class="fas fa-utensils"></i>
+                        Proposer un restaurant</a>
+                    </li>
+                    <li class="footer__nav__link">
+                        <a href="#"><i class="fas fa-hands-helping"></i>
+                        Devenir partenaire</a>
+                    </li>
+                    <li class="footer__nav__link">
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li class="footer__nav__link">
+                        <a href="mailto:contact@ohmyfood.fr">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

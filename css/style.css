@@ -578,6 +578,69 @@ h3 {
   transform: rotate(0deg);
 }
 
+.loader {
+  animation: spin 1s 3 linear;
+  position: fixed;
+  left: calc(50% - 5vmin);
+  top: calc(50% - 5vmin);
+  width: 10vmin;
+  height: 10vmin;
+  border: 1vmin solid;
+  border-color: #9356DC #9356DC transparent transparent;
+  border-radius: 50%;
+}
+.loader::before, .loader::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+}
+.loader::before {
+  animation: spin 2s 1.5 linear;
+  left: 1px;
+  top: 1px;
+  width: calc(10vmin - 2 * (1vmin + 1px));
+  height: calc(10vmin - 2 * (1vmin + 1px));
+  border: 1vmin solid;
+  border-color: #FF79DA #FF79DA transparent transparent;
+  border-radius: 50%;
+}
+.loader::after {
+  animation: spin 3s 1 linear;
+  left: calc(1vmin + 2px);
+  top: calc(1vmin + 2px);
+  width: calc(10vmin - 4 * (1vmin + 1px));
+  height: calc(10vmin - 4 * (1vmin + 1px));
+  border: 1vmin solid;
+  border-color: #99E2D0 #99E2D0 transparent transparent;
+  border-radius: 50%;
+}
+
+.main-wrapper {
+  opacity: 0.2;
+  animation: opacity 0.01s 3s both;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes opacity {
+  100% {
+    opacity: 1;
+  }
+}
 .header {
   display: flex;
   justify-content: center;
