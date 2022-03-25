@@ -1,0 +1,26 @@
+$animation-duration: 1s;
+$delay-increment: 0.2s;
+$initial-delay: -0.5s;
+$number-of-dishes-by-category: 3;
+
+@for $i from 1 through 3 {
+    //  select each category: entrées,plats,desserts
+    .menu__category:nth-child(#{$i}) {
+
+        // recalculate initial delay for each category fonction of the number of dishes in previous categories   
+        $initial-delay: calc(#{$initial-delay} + (#{$i}-1)*#{$number-of-dishes-by-category}*#{$delay-increment});
+        
+        @for $n from 1 through $number-of-dishes-by-category {
+            // select each dish in each category
+            .menu__item:nth-child(#{$n}){
+                animation: menu-display $animation-duration both;
+                animation-delay: calc(#{$initial-delay} + (#{$n} - 1)*#{$delay-increment});
+            }
+        }
+    }
+}
+
+@keyframes menu-display {
+    0% {opacity: 0; transform: translateY(15px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
