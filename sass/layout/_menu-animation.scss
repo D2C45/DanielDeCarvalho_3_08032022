@@ -1,6 +1,6 @@
 $animation-duration: 1s;
 $delay-increment: 0.2s;
-$initial-delay: -0.5s;
+$initial-delay: 0s;
 $number-of-dishes-by-category: 3;
 
 @for $i from 1 through 3 {
@@ -8,8 +8,8 @@ $number-of-dishes-by-category: 3;
     .menu__category:nth-child(#{$i}) {
 
         // recalculate initial delay for each category fonction of the number of dishes in previous categories   
-        $initial-delay: calc(#{$initial-delay} + (#{$i}-1)*#{$number-of-dishes-by-category}*#{$delay-increment});
-        
+        $initial-delay: calc(#{$initial-delay} + (#{$i} - 1)*#{$number-of-dishes-by-category}*#{$delay-increment});
+
         @for $n from 1 through $number-of-dishes-by-category {
             // select each dish in each category
             .menu__item:nth-child(#{$n}){
