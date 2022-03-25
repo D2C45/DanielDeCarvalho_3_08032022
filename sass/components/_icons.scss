@@ -3,10 +3,11 @@
     padding-top: 5px;
 }
 
-.functioning .fas{
+.functioning__icon{
     font-size: 20px;
     padding-right: 25px;
     color: scale-color($font-color, $lightness: +50%);
+    transition: color 0.2s;
 }
 
 .fa-heart{

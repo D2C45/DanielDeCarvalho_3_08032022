@@ -423,6 +423,7 @@ h3 {
   border-radius: 24px;
   padding: 15px 20px;
   cursor: pointer;
+  transition: all 0.2s;
 }
 .btn--order {
   padding: 15px 50px;
@@ -437,10 +438,11 @@ h3 {
   padding-top: 5px;
 }
 
-.functioning .fas {
+.functioning__icon {
   font-size: 20px;
   padding-right: 25px;
   color: gray;
+  transition: color 0.2s;
 }
 
 .fa-heart {
@@ -532,6 +534,8 @@ h3 {
 }
 .favorite__check label .far {
   position: absolute;
+  opacity: 1;
+  transition: opacity 1s;
 }
 .favorite__check label .fas {
   opacity: 0;
@@ -671,6 +675,9 @@ h3 {
 .footer__nav__link {
   margin-bottom: 10px;
 }
+.footer__nav__link a:hover {
+  text-decoration: underline #ffffff;
+}
 
 .menu__category:nth-child(1) .menu__item:nth-child(1) {
   animation: menu-display 1s both;
@@ -794,6 +801,8 @@ h3 {
   box-shadow: 0px 4px 8px #cccccc;
   padding: 27px 0 27px 35px;
   border-radius: 25px;
+  cursor: default;
+  transition: background-color 0.2s;
 }
 .functioning__btn::before {
   counter-increment: numero;
@@ -808,6 +817,12 @@ h3 {
   height: 24px;
   width: 24px;
   border-radius: 50%;
+}
+.functioning__btn:hover {
+  background-color: #efe6fa;
+}
+.functioning__btn:hover .functioning__icon {
+  color: #9356DC;
 }
 
 .restaurants {

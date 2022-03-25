@@ -6,6 +6,9 @@
         padding: 0;
         &__link{
             margin-bottom: 10px;
+            a:hover{
+                text-decoration: underline #ffffff;
+            }
         }
     }
 }
