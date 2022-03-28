@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1d03da1a60.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../img/logo/ohmyfood.png">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>ohmyfood - Menu - Le délice des sens</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header__back">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1>ohmyfood</h1>
+    </header>
+    <picture>
+        <img src="../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Plat du restaurant Le délice des sens à Folie-Méricourt">
+    </picture>
+    <main class="menu container">
+        <header class="menu__header">
+            <h2>Le délice des sens</h2>
+            <div class="favorite__check">
+                <input type="checkbox" id="ledelicedessens" name="favorite">
+                <label for="ledelicedessens">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-heart"></i>
+                </label>
+            </div>
+        </header>
+        <form method="post" action="commande.php" class="menu__container">
+            <fieldset class="menu__category">
+                <legend class="menu__title">entrées</legend>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-entree-1" name="favorite">
+                        <label for="ledelicedessens-entree-1"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Tartare de thon</h2>
+                                <p>Assaisonné au yuzu</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>25€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-entree-2" name="favorite">
+                        <label for="ledelicedessens-entree-2"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Bouchée de homard croustillant</h2>
+                                <p>Et sa farandole de petits légumes</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>35€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-entree-3" name="favorite">
+                        <label for="ledelicedessens-entree-3"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Velouté de cèpes</h2>
+                                <p>Aux truffes</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>20€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="menu__category">
+                <legend class="menu__title">plats</legend>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-plat-1" name="favorite">
+                        <label for="ledelicedessens-plat-1"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Poulet rôti aux herbes de Provence</h2>
+                                <p>Et sa crème de truffe</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>40€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-plat-2" name="favorite">
+                        <label for="ledelicedessens-plat-2"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Langouste rôtie</h2>
+                                <p>Et ses légumes de saison</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>35€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-plat-3" name="favorite">
+                        <label for="ledelicedessens-plat-3"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Côte de boeuf Angus</h2>
+                                <p>Et sa purée de panais</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>44€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="menu__category">
+                <legend class="menu__title">desserts</legend>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-dessert-1" name="favorite">
+                        <label for="ledelicedessens-dessert-1"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Farandole de desserts</h2>
+                                <p>Du chef</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>18€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-dessert-2" name="favorite">
+                        <label for="ledelicedessens-dessert-2"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Crème brulée</h2>
+                                <p>Revisitée</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>22€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                    <li class="menu__item">
+                        <input type="checkbox" id="ledelicedessens-dessert-3" name="favorite">
+                        <label for="ledelicedessens-dessert-3"></label>
+                        <article class="menu__description">
+                            <div class="menu__info">
+                                <h2>Tiramisu</h2>
+                                <p>À la noisette</p>
+                            </div>
+                            <div class="menu__price">
+                                <strong>23€</strong>
+                            </div>
+                        </article>
+                        <div class="greencheckbox">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <div class="menu__order">
+            <button type="submit" class="btn btn--order">Commander</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <h2>ohmyfood</h2>
+            <ul class="footer__nav">
+                <li class="footer__nav__link">
+                    <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+                </li>
+                <li class="footer__nav__link">
+                    <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+                </li>
+                <li class="footer__nav__link">
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li class="footer__nav__link">
+                    <a href="mailto:contact@ohmyfood.fr">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

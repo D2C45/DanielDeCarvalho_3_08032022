@@ -4,7 +4,11 @@ picture{
     max-height: 400px;
     img{
         flex: 1;
+        height: 260px;
         width: 100%;
         object-fit: cover;
+        @include media (tablet){
+            height: 400px;
+        }
     }
 }

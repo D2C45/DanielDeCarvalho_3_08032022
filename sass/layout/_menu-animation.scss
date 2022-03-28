@@ -1,7 +1,7 @@
 $animation-duration: 1s;
 $delay-increment: 0.2s;
 $initial-delay: 0s;
-$number-of-dishes-by-category: 3;
+$number-of-dishes-by-category: 4;
 
 @for $i from 1 through 3 {
     //  select each category: entrées,plats,desserts
