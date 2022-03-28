@@ -9,13 +9,15 @@ $loader-space: 1px;
 }
 
 .loader{
-    animation:spin 1s 3 linear;
+    animation:spin 1s 3 linear both;
     position: fixed;
     left: calc(50% - $loader-size/2);
     top: calc(50% - $loader-size/2);
     width: $loader-size;
     height: $loader-size;
     @include border;
+    opacity: 1;
+    z-index: 15;
     &::before, &::after{
         box-sizing: border-box;
         content: '';
@@ -44,7 +46,8 @@ $loader-space: 1px;
 }
 @keyframes spin {
     0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
+    99% {opacity: 1;}
+    100% {transform: rotate(360deg); opacity: 0;}
 }
 @keyframes spin-reverse {
     0% {transform: rotate(0deg);}

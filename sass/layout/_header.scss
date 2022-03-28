@@ -9,8 +9,5 @@
     left: 20px;
     top: 50%;
     transform: translateY(-50%);
-    @include media (desktop){
-        left: 40px;
-    }
     }
 }
